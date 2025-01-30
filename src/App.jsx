@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
  
   useEffect(() => {
-    fetch("http://localhost:3000/dev/hello")
+    fetch("https://rejqxmrv4h.execute-api.us-east-1.amazonaws.com/dev/hello")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
